@@ -1231,11 +1231,15 @@ footer {
   will-change: transform;
 }
 
-.section-heading,
-.live-stage,
-.service-card,
-.channel,
-.final-section > * {
+/* Only hide these for the reveal animation once we know JS is actually
+   running (html.js is added synchronously in <head>). If JS fails to
+   load/execute for any reason, content stays visible and clickable
+   instead of being stuck at opacity: 0. */
+html.js .section-heading,
+html.js .live-stage,
+html.js .service-card,
+html.js .channel,
+html.js .final-section > * {
   opacity: 0;
   transform: translateY(35px);
   transition: opacity .9s var(--ease), transform .9s var(--ease);
