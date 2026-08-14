@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Schedule — Pilato Ministries</title>
+ <script>
+ (function () {
+ try {
+ var t = localStorage.getItem("pilato-theme");
+ if (t === "light") document.documentElement.setAttribute("data-theme", "light");
+ } catch (e) {}
+ })();
+ </script>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="styles.css">
+ <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+
+<body>
+
+ <div class="noise"></div>
+ <div class="cursor-glow"></div>
+
+ <!-- NAV -->
+ <header class="nav">
+ <a href="index.html" class="logo">
+ <span class="logo-mark"><img src="images/logo.png" alt="Pilato Ministries"></span>
+ <span>
+ PILATO
+ <small>MINISTRIES</small>
+ </span>
+ </a>
+
+ <nav>
+ <a href="index.html">Home</a>
+ <a href="about.html">About</a>
+ <a href="schedule.html" class="active">Schedule</a>
+ <a href="gallery.html">Gallery</a>
+ <a href="contact.html">Contact</a>
+ </nav>
+
+ <div class="nav-right">
+ <button class="theme-toggle" id="theme-toggle" aria-label="Toggle day mode">
+ <span class="icon moon">☾</span>
+ <span class="icon sun">☀</span>
+ <span class="knob"></span>
+ </button>
+
+ <a href="index.html#live" class="nav-live">
+ <i></i> LIVE
+ </a>
+ </div>
+ </header>
+
+
+ <main>
+
+ <!-- PAGE HERO -->
+ <section class="page-hero">
+
+ <div class="hero-grid"></div>
+
+ <div class="page-hero-inner">
+
+ <div class="crumb">
+ <a href="index.html">Home</a> / <em>Schedule</em>
+ </div>
+
+ <div class="eyebrow">
+ <span></span>
+ THE WEEK
+ </div>
+
+ <h1>
+ Four services.
+ <em>One rhythm.</em>
+ </h1>
+
+ <p>
+ Every gathering carries its own weight — from quiet counsel to the
+ fire of watch night. Find your place in the rhythm of the house.
+ </p>
+
+ </div>
+
+ </section>
+
+
+ <!-- SCHEDULE LIST -->
+ <section class="schedule">
+
+ <div class="section-number">01</div>
+
+ <div class="section-heading">
+ <span>WEEKLY GATHERINGS</span>
+ <h2>Plan your<br><em>visit.</em></h2>
+ </div>
+
+ <div class="schedule-list">
+
+ <div class="schedule-row">
+ <div class="card-symbol">✦</div>
+ <div class="row-title">
+ <h3>Counseling</h3>
+ <span>Quiet counsel, direction and prayer for the week ahead.</span>
+ </div>
+ <span class="row-day">MONDAY</span>
+ <span class="row-time">06:00 AM</span>
+ <a href="contact.html" class="row-link">RESERVE →</a>
+ </div>
+
+ <div class="schedule-row">
+ <div class="card-symbol">◈</div>
+ <div class="row-title">
+ <h3>Prophetic Service</h3>
+ <span>Word, revelation and prophetic ministry over the house.</span>
+ </div>
+ <span class="row-day">WEDNESDAY</span>
+ <span class="row-time">08:00 AM</span>
+ <a href="index.html#live" class="row-link">JOIN →</a>
+ </div>
+
+ <div class="schedule-row">
+ <div class="card-symbol">◉</div>
+ <div class="row-title">
+ <h3>Watch Night</h3>
+ <span>A night of prayer, worship and spiritual fire.</span>
+ </div>
+ <span class="row-day">FRIDAY</span>
+ <span class="row-time">09:00 PM</span>
+ <a href="index.html#live" class="row-link">JOIN →</a>
+ </div>
+
+ <div class="schedule-row">
+ <div class="card-symbol">✧</div>
+ <div class="row-title">
+ <h3>Anointing Service</h3>
+ <span>Worship, teaching and the anointing that breaks every yoke.</span>
+ </div>
+ <span class="row-day">SUNDAY</span>
+ <span class="row-time">08:00 AM</span>
+ <a href="index.html#live" class="row-link">JOIN →</a>
+ </div>
+
+ </div>
+
+ <div class="schedule-note">
+ <div>
+ <h3>First time visiting?</h3>
+ <p>Reach out ahead of your visit and someone from the house will personally welcome you.</p>
+ </div>
+ <a href="contact.html" class="btn primary">
+ <span>Get in touch</span>
+ <b>↗</b>
+ </a>
+ </div>
+
+ </section>
+
+
+ <!-- CTA -->
+ <section class="final-section">
+
+ <div class="giant-p">P</div>
+
+ <span>YOU ARE WELCOME HERE</span>
+
+ <h2>
+ COME TO THE<br>
+ <em>HOUSE.</em>
+ </h2>
+
+ <a href="contact.html" class="btn primary">
+ Get directions ↗
+ </a>
+
+ </section>
+
+ </main>
+
+
+ <footer>
+
+ <div class="footer-top">
+
+ <div class="footer-logo">
+ <span class="logo-mark"><img src="images/logo.png" alt="Pilato Ministries"></span>
+ <strong>PILATO<br>MINISTRIES</strong>
+ </div>
+
+ <p>
+ A house of prayer, prophecy,<br>
+ and power — Accra, Ghana.
+ </p>
+
+ <div class="footer-links">
+ <a href="about.html">About</a>
+ <a href="schedule.html">Schedule</a>
+ <a href="gallery.html">Gallery</a>
+ <a href="contact.html">Contact</a>
+ </div>
+
+ </div>
+
+ <div class="footer-bottom">
+ <span>© 2026 PILATO MINISTRIES</span>
+ <span>ACCRA · GHANA</span>
+ </div>
+
+ </footer>
+
+
+ <script src="script.js"></script>
+
+</body>
+</html>
