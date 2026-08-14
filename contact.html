@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Contact — Pilato Ministries</title>
+ <script>
+ (function () {
+ try {
+ var t = localStorage.getItem("pilato-theme");
+ if (t === "light") document.documentElement.setAttribute("data-theme", "light");
+ } catch (e) {}
+ })();
+ </script>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="styles.css">
+ <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+
+<body>
+
+ <div class="noise"></div>
+ <div class="cursor-glow"></div>
+
+ <!-- NAV -->
+ <header class="nav">
+ <a href="index.html" class="logo">
+ <span class="logo-mark"><img src="images/logo.png" alt="Pilato Ministries"></span>
+ <span>
+ PILATO
+ <small>MINISTRIES</small>
+ </span>
+ </a>
+
+ <nav>
+ <a href="index.html">Home</a>
+ <a href="about.html">About</a>
+ <a href="schedule.html">Schedule</a>
+ <a href="gallery.html">Gallery</a>
+ <a href="contact.html" class="active">Contact</a>
+ </nav>
+
+ <div class="nav-right">
+ <button class="theme-toggle" id="theme-toggle" aria-label="Toggle day mode">
+ <span class="icon moon">☾</span>
+ <span class="icon sun">☀</span>
+ <span class="knob"></span>
+ </button>
+
+ <a href="index.html#live" class="nav-live">
+ <i></i> LIVE
+ </a>
+
+ <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+ <span></span><span></span><span></span>
+ </button>
+ </div>
+ </header>
+
+ <div class="nav-scrim" id="nav-scrim"></div>
+
+
+ <main>
+
+ <!-- PAGE HERO -->
+ <section class="page-hero">
+
+ <div class="hero-grid"></div>
+
+ <div class="page-hero-inner">
+
+ <div class="crumb">
+ <a href="index.html">Home</a> / <em>Contact</em>
+ </div>
+
+ <div class="eyebrow">
+ <span></span>
+ REACH OUT
+ </div>
+
+ <h1>
+ Come find
+ <em>the house.</em>
+ </h1>
+
+ <p>
+ Questions, prayer requests, or planning your first visit — we'd love
+ to hear from you.
+ </p>
+
+ </div>
+
+ </section>
+
+
+ <!-- CONTACT -->
+ <section class="contact">
+
+ <div class="section-number">01</div>
+
+ <div class="contact-layout">
+
+ <div class="contact-info">
+
+ <div class="info-block">
+ <span class="mini-label">ADDRESS</span>
+ <strong>Pilato Ministries House</strong>
+ <p>12 Liberation Road, East Legon<br>Accra, Ghana</p>
+ </div>
+
+ <div class="info-block">
+ <span class="mini-label">PHONE &amp; EMAIL</span>
+ <strong>+233 20 000 0000</strong>
+ <p><a href="mailto:hello@pilatoministries.org">hello@pilatoministries.org</a></p>
+ </div>
+
+ <div class="info-block">
+ <span class="mini-label">SERVICE HOURS</span>
+ <strong>Wed &amp; Sun · 08:00 AM</strong>
+ <p>Full weekly rhythm on the <a href="schedule.html">schedule page</a>.</p>
+ </div>
+
+ <div class="contact-map">
+ <span>◈</span>
+ Map coming soon
+ </div>
+
+ </div>
+
+ <form class="contact-form" id="contact-form">
+
+ <div class="form-row">
+ <div class="field">
+ <label for="name">Full name</label>
+ <input type="text" id="name" name="name" placeholder="Your name" required>
+ </div>
+ <div class="field">
+ <label for="email">Email</label>
+ <input type="email" id="email" name="email" placeholder="you@email.com" required>
+ </div>
+ </div>
+
+ <div class="field">
+ <label for="subject">Subject</label>
+ <input type="text" id="subject" name="subject" placeholder="What's this about?">
+ </div>
+
+ <div class="field">
+ <label for="message">Message</label>
+ <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
+ </div>
+
+ <button type="submit" class="btn primary">
+ <span>Send message</span>
+ <b>↗</b>
+ </button>
+
+ <div class="form-status" id="form-status"></div>
+
+ </form>
+
+ </div>
+
+ </section>
+
+ </main>
+
+
+ <footer>
+
+ <div class="footer-top">
+
+ <div class="footer-logo">
+ <span class="logo-mark"><img src="images/logo.png" alt="Pilato Ministries"></span>
+ <strong>PILATO<br>MINISTRIES</strong>
+ </div>
+
+ <p>
+ A house of prayer, prophecy,<br>
+ and power — Accra, Ghana.
+ </p>
+
+ <div class="footer-links">
+ <a href="about.html">About</a>
+ <a href="schedule.html">Schedule</a>
+ <a href="gallery.html">Gallery</a>
+ <a href="contact.html">Contact</a>
+ </div>
+
+ </div>
+
+ <div class="footer-bottom">
+ <span>© 2026 PILATO MINISTRIES</span>
+ <span>ACCRA · GHANA</span>
+ </div>
+
+ </footer>
+
+
+ <script src="script.js"></script>
+
+</body>
+</html>
