@@ -145,7 +145,7 @@ p { color: var(--muted); line-height: 1.7; font-weight: 400; }
 .nav {
   position: fixed;
   top: 0; left: 0; right: 0;
-  z-index: 500;
+  z-index: 650;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -253,6 +253,8 @@ nav {
   display: flex;
   align-items: center;
   gap: 18px;
+  position: relative;
+  z-index: 700;
 }
 
 .menu-toggle {
