@@ -296,7 +296,15 @@ nav {
 
 .nav-scrim.active { opacity: 1; pointer-events: auto; }
 
-body.no-scroll { overflow: hidden; }
+body.no-scroll,
+html.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+@media (hover: none) {
+  .cursor-glow { display: none; }
+}
 
 .theme-toggle {
   position: relative;
@@ -1705,7 +1713,7 @@ footer {
 .field input,
 .field textarea {
   font-family: var(--sans);
-  font-size: 14px;
+  font-size: 16px;
   color: var(--cream);
   background: var(--surface-glass);
   border: 1px solid var(--line);
@@ -1792,8 +1800,13 @@ footer {
   .orb-scene { display: none; }
   .hero-copy { max-width: 100%; }
   .hero { min-height: 92vh; }
-  .schedule-row { grid-template-columns: 50px 1fr; grid-template-areas: "sym title" "sym day" "sym time" "sym link"; row-gap: 10px; }
-  .schedule-row .row-day, .schedule-row .row-time, .schedule-row .row-link { justify-self: start; }
+  .schedule-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .schedule-row .card-symbol { margin-bottom: 2px; }
   .schedule-note { flex-direction: column; align-items: flex-start; }
   .form-row { grid-template-columns: 1fr; }
   .video-grid { grid-template-columns: repeat(2, 1fr); }

@@ -151,6 +151,7 @@ function closeMenu() {
   mobileNav?.classList.remove("open");
   navScrim?.classList.remove("active");
   document.body.classList.remove("no-scroll");
+  document.documentElement.classList.remove("no-scroll");
 }
 
 if (menuToggle && mobileNav) {
@@ -160,6 +161,7 @@ if (menuToggle && mobileNav) {
     menuToggle.classList.toggle("active", isOpen);
     navScrim?.classList.toggle("active", isOpen);
     document.body.classList.toggle("no-scroll", isOpen);
+    document.documentElement.classList.toggle("no-scroll", isOpen);
   });
 
   mobileNav.querySelectorAll("a").forEach(a => a.addEventListener("click", closeMenu));
