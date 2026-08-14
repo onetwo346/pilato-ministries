@@ -51,7 +51,7 @@ DAY / NIGHT THEME TOGGLE
 
 try {
 
-  const THEME_KEY = "pilato-theme";
+  const THEME_KEY = "mgfc-theme";
   const themeToggle = document.querySelector("#theme-toggle");
 
   const setTheme = (theme) => {
